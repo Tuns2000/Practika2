@@ -1,17 +1,54 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |   background-color: $primary-color; // переменная для основного цвета
- *   |                     ^^^^^^^^^^^^^^
- *   '
- *   styles\main.scss 7:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502    background-color: $primary-color; // \43f \435 \440 \435 \43c \435 \43d \43d \430 \44f  \434 \43b \44f  \43e \441 \43d \43e \432 \43d \43e \433 \43e  \446 \432 \435 \442 \430 \d\a   \2502                      ^^^^^^^^^^^^^^\a   \2575 \a   styles\\main.scss 7:21  root stylesheet";
+.button {
+  background-color: #3498db;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+.button:hover {
+  background-color: red;
+}
+
+body {
+  font-family: "Helvetica, Arial, sans-serif";
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+.card .card-title {
+  font-size: 1.5em;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+.card .card-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-footer .price {
+  font-weight: bold;
+  color: #2ecc71;
+}
+.card .card-footer .buy-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/*# sourceMappingURL=styles.css.map */

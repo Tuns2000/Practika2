@@ -4,17 +4,14 @@
 
 
 .button {
-  background-color: $primary-color; 
+  background-color: color.$primary-color; 
   color: black;
-  padding: $button-padding;
-  font-size: $font-size;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
   &:hover {
-    background-color: $hover-color; 
+    background-color: color.$hover-color; 
   }
 }
 
