@@ -2,7 +2,23 @@
 @use 'color';
 @use 'mixins';
 
-// Основные стили
+
+.button {
+  background-color: $primary-color; 
+  color: black;
+  padding: $button-padding;
+  font-size: $font-size;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color; 
+  }
+}
+
+
 body {
     font-family: variables.$font-stack;
     font-size: variables.$base-font-size;
